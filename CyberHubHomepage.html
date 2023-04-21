@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../imagee/CyberHubIcon.png" type = "image/x-icon">
+	<title>CyberHub</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	
+	
+	
+	<section>
+		<div class="hero">
+			<div class="navbar">
+				<a href="CyberHubHomepage.html" ><img src="imagee/CyberHub.png"  class="logo"></a>
+				<ul>
+					<li><a  style="text-decoration:none" href="HomePage.html">Homes</a></li>
+					<li><a  style="text-decoration:none" href="Contactpage.html">Contact</a></li>
+					<li><a  style="text-decoration:none" href="Aboutpage.html">Services</a></li>
+					<li><a  style="text-decoration:none" href="Aboutpage.html">About</a></li>
+				</ul>
+			
+			</div>
+		<div class="content">
+			<small >What is</small>
+			<h1><span class="autotype"></span></h1>
+			
+			<button type="button">Take a tour</button>
+		</div>
+		
+		</section>
+		<section>
+			<div class="container reveal">
+			  <h2>What is Malware?</h2>
+			  <div class="cards">
+				<div class="text-card">
+					<img src="imagee/malware.png">
+				</div>
+				<div class="text-card">
+			   
+				  <p>
+					<strong>What is Malware?
+						<br>
+					</strong>
+					<br>
+					As software designed to interfere with a computer's normal functioning, malware is a blanket term for viruses, trojans, and other destructive computer programs threat actors use to infect systems and networks in order to gain access to sensitive information.
+					
+					Malware Definition
+					Malware (short for “malicious software”) is a file or code, typically delivered over a network, that infects, explores, steals or conducts virtually any behavior an attacker wants. And because malware comes in so many variants, there are numerous methods to infect computer systems. Though varied in type and capabilities, malware usually has one of the following objectives:
+					
+					Provide remote control for an attacker to use an infected machine.
+					Send spam from the infected machine to unsuspecting targets.
+					Investigate the infected user’s local network.
+					Steal sensitive data.
+				</p>
+				</div>
+			  
+			  </div>
+			</div>
+		  </section>
+	<section>
+
+		<div class="container reveal">
+		  <h1>Example Of Malware</h1>
+		  <div class="cards">
+			<div class="text-card">
+			  <img src="imagee/computer-virus.png">
+			  <h3>Computer Viruses</h3>
+			
+			</div>
+			<div class="text-card">
+			  <img src="imagee/security-trojan_horse.png">
+			  <h3>Trojan Horse</h3>
+			
+			</div>
+			<div class="text-card">
+			  <img src="imagee/rootkit.jpg">
+			  <h3>Rootkit</h3>
+			
+			</div>
+			<div class="text-card">
+			  <img src="imagee/ransomware-attack.jpg">
+			  <h3>Ransomware</h3>
+			  
+			</div>
+			
+		  </div>
+		</div>
+	  </section>
+	  <section>
+		<footer>
+		<p>Copyright &copy; 2023 Group 3 CyberHub. All rights reserved.</p>
+		
+	</footer>
+	</section>
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed(".autotype",
+		{
+strings:["Virus?", "Worm?", "Trojan?", "Ransomware?", "Bot?", "Adware?", "Spyware?", "Rootkit?", "Fileless Malware?", "Malvertising?"],
+typeSpeed : 160,
+backSpeed : 150,
+loop : true
+
+		});
+	</script>
+	 <script type="text/javascript">
+		window.addEventListener('scroll', reveal);
+	
+		function reveal(){
+		  var reveals = document.querySelectorAll('.reveal');
+	
+		  for(var i = 0; i < reveals.length; i++){
+	
+			var windowheight = window.innerHeight;
+			var revealtop = reveals[i].getBoundingClientRect().top;
+			var revealpoint = 150;
+	
+			if(revealtop < windowheight - revealpoint){
+			  reveals[i].classList.add('active');
+			}
+			else{
+			  reveals[i].classList.remove('active');
+			}
+		  }
+		}
+		</script>
+
+	
+</body>
+</html>
